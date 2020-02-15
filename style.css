@@ -1,0 +1,566 @@
+body{
+	overflow-x: hidden;
+	font-family: 'Poppins', sans-serif;
+}
+
+header{
+	font-size: 28px;
+	text-align: center;
+	margin: -45px;
+	padding:  10px;
+	width: 104%;
+	box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.brand{
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+}
+
+strong{
+	font-size: 40px;
+}
+
+.logo{
+    height: 60px;
+    width: 70px;
+    float: right;
+}
+
+.nav{
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	opacity: .9;
+	overflow-x: hidden;
+	padding-top: 40px;
+	transition: 0.7s;
+	background: black;
+}
+
+.nav .search{
+	width: 80%;
+	height: 18px;
+	font-size: 15px;
+}
+
+.nav a{
+	display: block;
+	padding: 25px 15px;
+	text-align: center;
+	margin: auto;
+	font-size: 25px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+}
+
+.nav .close{
+	position: absolute;
+	top: 0;
+	right: 1px;
+	margin-left: 10px;
+	font-size: 16px;
+}
+.nav .close strong{
+	font-size: 19px;
+}
+
+.slide a{
+	color: #000;
+	font-size: 34px;
+}
+
+#content{
+	padding: -15px;
+	transition: margin-left 0.7s;
+	overflow: hidden;
+	width: 100%;
+}
+
+.nav-item{
+	list-style-type: none;
+}
+
+.nav-item > .nav-link{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 1em;
+    flex: 1;
+}
+
+.nav-link hr{
+	width: 100%;
+}
+
+.nav-item > .nav-icon{
+	list-style: none;
+	display: block;
+	font-size: 18px;
+	color: white;
+}
+
+.main{
+	background: black;
+	height: 10%;
+	color: white;
+	text-align: center;
+}
+
+.view{
+	width: 95%;
+	height: 490px;
+    padding: 40px;
+    margin: auto;
+}
+
+.firstimg{
+	width: 100%;
+	height: 100%;
+}
+
+.overlay{
+	position: absolute;
+	top: 130px;
+	left: 48px;
+	bottom: 0;
+	right: 0;
+	width: 94%;
+	height: 75%;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.view:hover .overlay{
+	opacity: 1;
+}
+
+.outfits{
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+    margin: 15px;
+    text-transform: uppercase;
+	text-decoration: none;
+}
+
+.favorite{
+	font-size: 30px;
+	color: black;
+	margin: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.hint{
+	font-size: 15px;
+    color: black;
+    margin: 15px;
+	text-decoration: none;
+}
+
+.container{
+	width: 1280px;
+	height: 540px;
+	margin: 70px auto 0;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.container .box{
+	position: relative;
+	width: 300px;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.container .box .imgBox{
+	position: relative;
+	height: 150%;
+	width: 135%;
+}
+
+.container .box .imgBox img{
+	max-width: 100%;
+	max-height: 50%;
+}
+
+.over{
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	bottom: 0;
+	right: 0;
+	width: 78%;
+	height: 51%;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.imgBox:hover .over{
+	opacity: .7;
+}
+
+.content{
+	width: 1280px;
+	height: 540px;
+	margin: -70px auto 0;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.content .box{
+	position: relative;
+	width: 300px;
+	margin: 10px;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.content .box .imgBox{
+	position: relative;
+	height: 150%;
+	width: 135%;
+}
+
+.content .box .imgBox img{
+	max-width: 100%;
+	max-height: 50%;
+}
+
+.over2{
+	position: absolute;
+	top: -5px;
+	left: -5px;
+	bottom: 0;
+	right: 0;
+	width: 78%;
+	height: 51%;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.imgBox:hover .over2{
+	opacity: .7;
+}
+
+.out{
+    font-size: 15px;
+    color: black;
+    font-weight: 100;
+    margin: 65px;
+    text-transform: uppercase;
+	text-decoration: none;
+}
+
+.fav{
+	font-size: 30px;
+	color: black;
+	margin: 65px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.hints{
+	font-size: 15px;
+    color: black;
+    margin: 65px;
+	text-decoration: none;
+}
+
+.reck{
+	width: 95%;
+	height: 490px;
+	margin: auto;
+}
+
+.secondimg{
+	width: 100%;
+	height: 100%;
+}
+
+.more a{
+	font-size: 25px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: black;
+	margin: 530px;
+}
+
+.sign a{
+	font-size: 18px;
+    color: black;
+    font-weight: 100;
+    margin: 600px;
+	text-decoration: none;
+}
+
+footer .end{
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+}
+.end a{
+	text-decoration: none;
+	color: black;
+}
+.end a strong{
+	font-size: 45px;
+}
+
+.curves{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.feb{
+	font-size: 15px;
+    color: black;
+    font-weight: 100;
+    margin: 35px;
+    text-transform: uppercase;
+	text-decoration: none;
+}
+
+.this{
+	font-size: 30px;
+	color: black;
+	margin: 35px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.over4{
+	position: absolute;
+	top: 265px;
+	left: 48px;
+	bottom: 0;
+	right: 0;
+	width: 94%;
+	height: 75%;
+	opacity: 0;
+	transition: .5s ease;
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.view:hover .over4{
+	opacity: 1;
+}
+
+.details{
+	font-size: 35px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.eloquii{
+	font-size: 23px;
+	font-weight: 100;
+	text-align: center;
+}
+
+.spanx{
+	font-size: 23px;
+	font-weight: 100;
+	text-align: center;
+}
+
+.another{
+	width: 80%;
+	height: 800px;
+	margin: auto;
+}
+.ano{
+	width: 100%;
+	height: 100%;
+}
+
+.trench{
+    font-size: 40px;
+	width: 60%;
+	height: 700px;
+	margin: 40px;
+}
+
+.shop{
+	width: 100%;
+	height: 100%;
+}
+
+.sparkle{
+    font-size: 40px;
+	width: 60%;
+	height: 600px;
+	margin: 500px;
+	margin-top: 100px;
+}
+
+.blue{
+	width: 100%;
+	height: 100%;
+}
+
+.denim{
+    font-size: 40px;
+	width: 60%;
+	height: 700px;
+	margin: 40px;
+	margin-top:-400px;
+}
+.shop2{
+	width: 100%;
+	height: 100%;
+}
+
+.jeans{
+    padding: 0;
+	width: 60%;
+	height: 700px;
+	margin: 500px;
+	margin-top: 50px;
+}
+
+.frock{
+	width: 60%;
+	height: 700px;
+	margin: 40px;
+	margin-top: -400px;
+}
+
+.mon{
+	width: 50%;
+	height: 650px;
+    margin: auto;
+}
+.tue{
+	width: 100%;
+	height: 100%;
+}
+
+.suit{
+	width: 60%;
+	height: 700px;
+	margin: 40px;
+	margin-top: -750px;
+}
+
+.abt{
+	background-color: whitesmoke;
+	margin: 25px;
+}
+
+.outf{
+    font-size: 18px;
+    color: black;
+    font-weight: 100;
+    margin: 15px;
+    text-transform: uppercase;
+	text-decoration: none;
+}
+
+.favor{
+	font-size: 40px;
+	color: black;
+	margin: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+p{
+	font-size: 16px;
+	text-decoration: none;
+	color: black;
+	margin: 20px;
+}
+
+.tane{
+	background-color: whitesmoke;
+	margin: 25px;
+}
+
+.bars{
+	color: black;
+	display: inline-block;
+}
+.iconss{
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+#popup{
+	position: absolute;
+	width: 40%;
+	margin: -300px 30%;
+	background-color: black;
+	color: white;
+	display: none;
+}
+
+#b1{
+	width: 50px;
+	background-color: whitesmoke;
+	color: black;
+	padding: 10px;
+	padding-top: 5px;
+	cursor: pointer;
+}
+#b1:hover{
+	color: white;
+	background-color: black;
+}
+
+.contaf{
+	width: 100%;
+	text-align: right;
+	color: white;
+}
+
+.conta{
+	width: 100%;
+	padding: 10%;
+}
+
+.conta input{
+	width: 80%;
+	height: 30px;
+	border-radius: 2%;
+	border: none;
+	font-size: 15px;
+}
+
+.conta input[type=submit]{
+	font-size: 20px;
+	background-color: whitesmoke;
+}
+
+.let{
+	text-align: left;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#close{
+	padding: 0 5px;
+	cursor: pointer;
+}
+#close:hover{
+	background-color: red;
+}
